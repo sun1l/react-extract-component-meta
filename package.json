@@ -1,6 +1,6 @@
 {
   "name": "react-extract-component-meta",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Webpack plugin to extract React component metadata.",
   "main": "./dist/index.js",
   "scripts": {

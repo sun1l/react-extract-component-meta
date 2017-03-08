@@ -1,4 +1,4 @@
-import {reactDocs, defaultHandlers} from 'react-docgen';
+import {parse, defaultHandlers} from 'react-docgen';
 import componentNameHandler from './handlers/componentNameHandler';
 
 
@@ -32,7 +32,7 @@ ReactExtractComponentMeta.prototype.apply = function(compiler) {
         // Filter react components
         if(Array.isArray(resourcePath.match(this.config.entry))){
           let source = module._source._value; 
-          let componentInfo = reactDocs.parse(source, null, reactDocs.defaultHandlers);
+          let componentInfo = parse(source, null, handlers);
           
           let getComponentName = componentInfo.name;
           json[getComponentName] = componentInfo;
