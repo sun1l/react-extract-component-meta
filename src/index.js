@@ -1,9 +1,9 @@
-import reactDocs from 'react-docgen';
+import {reactDocs, defaultHandlers} from 'react-docgen';
 import componentNameHandler from './handlers/componentNameHandler';
 
 
 // Fetch reactDoc handlers and merge
-let handlers = reactDocs.defaultHandlers;
+let handlers = defaultHandlers;
 handlers.unshift(componentNameHandler);
 
 let json = {};
