@@ -1,5 +1,5 @@
 # React Extract Component Metadata
-[![npm](https://img.shields.io/npm/v/npm.svg)]()
+[![npm](https://img.shields.io/npm/v/react-extract-component-meta.svg)](https://www.npmjs.com/package/react-extract-component-meta)
 
 `react-extract-component-meta` is a Webpack plugin to extract [React](https://github.com/facebook/react) component metadata. It generates a JSON file as output.
 
