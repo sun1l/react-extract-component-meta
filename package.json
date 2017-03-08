@@ -1,11 +1,12 @@
 {
   "name": "react-extract-component-meta",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Webpack plugin to extract React component metadata.",
   "main": "./dist/index.js",
   "scripts": {
     "lint": "eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "build": "rimraf dist/ && babel src/ --out-dir dist/",
     "prepublish": "npm run lint && npm run build",
     "preversion": "npm run lint"
@@ -39,6 +40,7 @@
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
     "babel-preset-latest": "^6.22.0",
+    "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.17.1",
     "rimraf": "^2.6.1"
   }
