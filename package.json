@@ -1,8 +1,8 @@
 {
   "name": "react-extract-component-meta",
-  "version": "0.0.1",
-  "description": "Webpack plugin to extract React component metadata",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Webpack plugin to extract React component metadata.",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,12 +14,18 @@
     "react",
     "component",
     "metadata",
-    "props"
+    "props",
+    "webpack",
+    "plugin"
   ],
   "author": "Sunil Kumar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sun1l/react-extract-component-meta/issues"
   },
-  "homepage": "https://github.com/sun1l/react-extract-component-meta#readme"
+  "homepage": "https://github.com/sun1l/react-extract-component-meta#readme",
+  "devDependencies": {
+    "react-docgen": "^2.13.0",
+    "recast": "^0.11.22"
+  }
 }
