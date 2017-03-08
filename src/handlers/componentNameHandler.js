@@ -1,5 +1,5 @@
-var recast = require('recast');
-var reactDocs = require('react-docgen');
+import recast from 'recast';
+import reactDocs from 'react-docgen';
 
 var {types: {namedTypes: types}} = recast;
 
@@ -19,4 +19,4 @@ function componentNameHandler(documentation, path){
   }
 }
 
-module.exports = componentNameHandler;
+export default componentNameHandler;

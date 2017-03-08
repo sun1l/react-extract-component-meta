@@ -1,10 +1,14 @@
 {
   "name": "react-extract-component-meta",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webpack plugin to extract React component metadata.",
-  "main": "src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel src/ --out-dir dist/",
+    "prepublish": "npm run lint && npm run build",
+    "preversion": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -18,14 +22,24 @@
     "webpack",
     "plugin"
   ],
-  "author": "Sunil Kumar",
+  "author": {
+    "name": "Sunil Kumar",
+    "url": "https://twitter.com/sun1lkumar"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sun1l/react-extract-component-meta/issues"
   },
   "homepage": "https://github.com/sun1l/react-extract-component-meta#readme",
-  "devDependencies": {
+  "dependencies": {
     "react-docgen": "^2.13.0",
     "recast": "^0.11.22"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.17.1",
+    "rimraf": "^2.6.1"
   }
 }

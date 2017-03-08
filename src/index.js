@@ -1,6 +1,6 @@
-let recast = require('recast');
-let reactDocs = require('react-docgen');
-var componentNameHandler = require('./handlers/componentNameHandler');
+import reactDocs from 'react-docgen';
+import componentNameHandler from './handlers/componentNameHandler';
+
 
 // Fetch reactDoc handlers and merge
 let handlers = reactDocs.defaultHandlers;
@@ -36,8 +36,6 @@ ReactExtractComponentMeta.prototype.apply = function(compiler) {
           
           let getComponentName = componentInfo.name;
           json[getComponentName] = componentInfo;
-          
-          console.log(json);
         }
       }, this);
     }, this);
