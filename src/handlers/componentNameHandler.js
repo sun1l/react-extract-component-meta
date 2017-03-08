@@ -1,16 +1,16 @@
 import recast from 'recast';
-import reactDocs from 'react-docgen';
+import {utils} from 'react-docgen';
 
 var {types: {namedTypes: types}} = recast;
 
 function componentNameHandler(documentation, path){
   let className = null;
 
-  if(reactDocs.utils.isReactComponentClass(path)){
+  if(utils.isReactComponentClass(path)){
     let node = path.node;
 
     if(types.ClassDeclaration.check(node)){
-      className = reactDocs.utils.getNameOrValue(path.get('id', 'name'));
+      className = utils.getNameOrValue(path.get('id', 'name'));
     }
   }
 
