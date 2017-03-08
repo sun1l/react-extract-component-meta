@@ -1,7 +1,7 @@
 # React Extract Component Metadata
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 
-`react-extract-component-meta` is a Webpack plugin to extract [React][] component metadata. It generates a JSON file as output.
+`react-extract-component-meta` is a Webpack plugin to extract [React](https://github.com/facebook/react) component metadata. It generates a JSON file as output.
 
 # Installation
 
@@ -24,11 +24,10 @@ module.exports = {
 ```
 
 # Changelog
-
-# Contributing
+The changelog can be found on the [Change-log](https://github.com/sun1l/react-extract-component-meta/CHANGELOG.md) page.
 
 # Authors and license
 
-[Sunil Kumar][https://twitter.com/sun1lkumar]
+[Sunil Kumar](https://twitter.com/sun1lkumar)
 
 MIT License, see the included License.md file.
