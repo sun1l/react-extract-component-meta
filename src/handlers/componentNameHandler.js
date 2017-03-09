@@ -1,7 +1,5 @@
-import recast from 'recast';
+import {types} from 'recast';
 import {utils} from 'react-docgen';
-
-var {types: {namedTypes: types}} = recast;
 
 function componentNameHandler(documentation, path){
   let className = null;
@@ -9,7 +7,7 @@ function componentNameHandler(documentation, path){
   if(utils.isReactComponentClass(path)){
     let node = path.node;
 
-    if(types.ClassDeclaration.check(node)){
+    if(types.namedTypes.ClassDeclaration.check(node)){
       className = utils.getNameOrValue(path.get('id', 'name'));
     }
   }
