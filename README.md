@@ -22,12 +22,27 @@ module.exports = {
     plugins: [new ReactExtractComponentMeta()]
 };
 ```
+`react-extract-component-meta` accpets a config object which allows you to specify the pattern to match your react components as well as name of the output JSON file.
+
+```Javascript
+const ReactExtractComponentMeta = require('react-extract-component-meta');
+
+module.exports = {
+    ...    
+    plugins: [new ReactExtractComponentMeta({
+        'filter': /component/gi,
+        'output': {
+            'filename': 'components-meta.json'
+        }
+    })]
+};
+```
 
 # Changelog
-The changelog can be found on the [Change-log](https://github.com/sun1l/react-extract-component-meta/CHANGELOG.md) page.
+The changelog can be found on the [Change log](https://github.com/sun1l/react-extract-component-meta/CHANGELOG.md) page.
 
 # Authors and license
 
 [Sunil Kumar](https://twitter.com/sun1lkumar)
 
-MIT License, see the included License.md file.
+MIT License, see the included [License](https://github.com/sun1l/react-extract-component-meta/LICENSE) file.
